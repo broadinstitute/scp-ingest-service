@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="scp-ingest-pipeline",
-    version="1.11.0",
+    version="1.10.1",
     description="ETL pipeline for single-cell RNA-seq data",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -27,10 +27,10 @@ setup(
         "pymongo",
         "loompy",
         "backoff",
-        "opencensus",
-        "opencensus-context",
-        "opencensus-ext-stackdriver",
-        "google-cloud-trace",
+        "opencensus==0.7.6",
+        "opencensus-context==0.1.1",
+        "opencensus-ext-stackdriver==0.7.2",
+        "google-cloud-trace==0.23.0",
         "grpcio",
         "sentry-sdk",
     ],
